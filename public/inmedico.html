@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><h2>Registrar Médico</h2>
+<link rel="stylesheet" href="styles.css">
+<form action="/insertar-medico" method="POST">
+  <label for="medico-name">Nombre del médico:</label>
+  <input type="text" id="medico-name" name="medico_name">
+
+  <label for="area_id">Área en la que trabaja:</label>
+  <input type="text" id="area_id" name="area_id">
+  <label for="Turno">Turno:</label>
+  <input type="text" id="Turno" name="Turno">
+  <label for="fecha_contratacion">Fecha de contratación:</label>
+  <input type="date" id="fecha_contratacion" name="fecha_contratacion">
+  
+  <button type="submit">Guardar Médico</button>
+
+</form>
+<button onclick="window.location.href='/medico'">Ver Medicos Regsitrados</button>
+<button onclick="window.location.href='/'">Volver</button>
+</html>

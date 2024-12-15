@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <h1>Cargar Medicamentos desde Excel</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="excelFile" accept=".xlsx" />
+    <button type="submit">Subir Archivo</button>
+  </form>
+
+  <script src="navbar.html"></script>
+  <button onclick="window.location.href='/downloads'">Descargar Lista de medicametos en formato Excel</button>
+<button onclick="window.location.href='/download'">Descargar Lista de medicametos en formato PDF</button>
+<button onclick="window.location.href='/'">Volver</button>
+</body>
+</html>
